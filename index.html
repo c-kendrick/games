@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Kendrick | Portfolio</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+<body>
+<nav id="navbar" class="nav-wrapper">
+    <div class="sticky-nav">
+        <div class="nav-content">
+            <span class="nav-logo">Christopher Kendrick</span>
+            <ul class="nav-links">
+                <li><i class="fas fa-solid fa-address-card fa-fw"></i><a href="#about">About Me</a></li>
+                <li><i class="fas fa-solid fa-code fa-fw"></i><a href="#portfolio">Portfolio</a></li>
+                <li><i class="fas fa-solid fa-lightbulb fa-fw"></i><a href="#skills">Skills & Expertise</a></li>
+                <li><i class="fas fa-solid fa-paper-plane fa-fw"></i><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-socials" id="nav-socials">
+                <ul class="nav-socials-ul">
+                    <li><i class="fas fa-solid fa-brands fa-github fa-fw"></i><a href="https://github.com/c-kendrick" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+                <a href="files/CV-Christopher-Kendrick.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <img id="hamburger" src="/images/hamburger.png" alt="logo">
+</nav>
+
+<header class="about-section">
+    <div id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="hero-text">
+            <strong>Hi, I'm Christopher, a software developer merging management experience with clean code.</strong>
+        </p>
+        <p class="bio-text">
+            Drawing from my background as a cinema duty manager, I use my operational focus to drive Agile methodologies,
+            define realistic project scopes, and ensure predictable development cycles.
+        </p>
+        <p class="bio-text coursework-intro">
+            <strong>My relevant coursework includes:</strong>
+        </p>
+        <div class="coursework">
+            <p><strong>Project Management:</strong> Managed Agile sprints and deliverables in Jira as a rotating Scrum
+                Master.</p>
+            <!-- placeholder: -->
+            <p><strong>Core Computer Science Subjects:</strong> Object-Oriented Programming, Discrete Mathematics,
+                Networking & Cloud Computing, and Database Design & Development.</p>
+        </div>
+        <br>
+        <div class="social-links">
+            <a href="https://github.com/c-kendrick" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="files/CV-Christopher-Kendrick.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+    </div>
+</header>
+
+<div id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="card fade-in">
+        <div class="card-content">
+            <h2 class="mini-title">Headless Portfolio API</h2>
+            <div>
+                <span class="tag">Java & Spring Boot</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">REST API</span>
+            </div>
+            <p><strong>Overview:</strong> A full-stack web app that uses a REST API and database to separate backend data from the frontend.</p>
+            <p><strong>Technical Decisions:</strong> Built a Spring Boot backend with APIs to manage and organise project data. Stored data in PostgreSQL using JPA. Built a simple frontend that fetches data from the API and displays it. Enabled frontend-backend communication using CORS.</p>
+            <div class="button-group">
+                <a href="https://github.com/c-kendrick/spring-portfolio-backend" class="btn" target="_blank" rel="noopener noreferrer">
+                    <span class="text-desktop">Backend Source Code</span>
+                    <span class="text-mobile">Backend Code</span>
+                </a>
+                <a href="https://github.com/c-kendrick/Spring-portfolio-frontend" class="btn" target="_blank" rel="noopener noreferrer">
+                    <span class="text-desktop">Frontend Source Code</span>
+                    <span class="text-mobile">Frontend Code</span>
+                </a>
+            </div>
+        </div>
+        <div class="card-image-wrapper">
+            <img src="images/json.png" alt="Headless Portfolio API">
+        </div>
+    </div>
+
+
+    <div class="card reverse fade-in">
+        <div class="card-content">
+            <h2 class="mini-title">Minecraft Java Plugins</h2>
+            <div>
+                <span class="tag">Java</span>
+                <span class="tag">Third Party API Integration</span>
+                <span class="tag">Event-Driven</span>
+                <span class="tag">RBAC</span>
+            </div>
+
+            <p><strong>Overview:</strong> Built custom backend systems for a live server used by 200+ players with 1,000+ downloads. </p>
+
+            <p><strong>Technical Decisions:</strong></p>
+            <ul>
+                <li><strong>API Ecosystem:</strong> Integrated third-party APIs to handle in-game economy, entity behaviour, and region permissions.
+                </li>
+                <li><strong>Spatial Data:</strong> Used the WorldEdit API to modify large map regions and control block generation.
+                </li>
+                <li><strong>Access Control:</strong> Built a role-based access system to control player permissions for backend actions.</li>
+            </ul>
+
+            <div class="button-group">
+                <a href="minecraft.html" class="btn-mc">More Information</a>
+            </div>
+        </div>
+        <div class="card-image-wrapper">
+            <img src="images/minecraft.png" alt="Minecraft Server Backend and Gameplay">
+        </div>
+    </div>
+
+    <div class="card fade-in">
+        <div class="card-content">
+            <h2 class="mini-title">Personal Finance Dashboard</h2>
+            <div>
+                <span class="tag">JavaScript (ES6)</span>
+                <span class="tag">Web Storage API</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">State Management</span>
+            </div>
+            <p><strong>Overview:</strong> A financial dashboard that works offline and tracks income, expenses, and savings in real time.
+            </p>
+            <p><strong>Technical Decisions:</strong> Built with vanilla JavaScript to manage UI and application state. Stored data locally in the browser to keep financial data secure and for fast load times. Used Chart.js to display it.
+            </p>
+            <div class="button-group">
+                <a href="https://github.com/c-kendrick/finance-tool" class="btn" target="_blank" rel="noopener noreferrer">
+                    <span class="text-desktop">Project Info & Source Code</span>
+                    <span class="text-mobile">Info & Code</span>
+                </a>
+                <a href="https://c-kendrick.github.io/finance-tool/" class="btn" target="_blank"
+                   rel="noopener noreferrer">View Site</a>
+            </div>
+        </div>
+        <div class="card-image-wrapper">
+            <img src="images/finance.png" alt="Finance Tracker Interface">
+        </div>
+    </div>
+
+    <div class="card reverse fade-in">
+        <div class="card-content">
+            <h2 class="mini-title">Dungeons & Dungeons & Dungeons</h2>
+            <div>
+                <span class="tag">Java</span>
+                <span class="tag">JUnit Testing</span>
+                <span class="tag">Object-Oriented Design</span>
+                <span class="tag">File I/O</span>
+            </div>
+            <p><strong>Overview:</strong> A Java command-line game built using object-oriented design, algorithms, and local data storage.</p>
+            <p><strong>Technical Decisions:</strong> Built an extensible class structure using inheritance and polymorphism. Used recursion to process game objects consistently and stored game state using CSV files.
+                Added JUnit tests for core game logic to ensure reliability.
+            </p>
+            <div class="button-group">
+                <a href="https://github.com/c-kendrick/COMP1010" class="btn" target="_blank" rel="noopener noreferrer">
+                    <span class="text-desktop">Project Info & Source Code</span>
+                    <span class="text-mobile">Info & Code</span>
+                </a>
+                <a href="https://ckendrick-mqu.itch.io/dungeons" class="btn" target="_blank" rel="noopener noreferrer">
+                    <span class="text-desktop">Play in Browser</span>
+                    <span class="text-mobile">Play Online</span>
+                </a>
+            </div>
+        </div>
+        <div class="card-image-wrapper">
+            <img src="images/dungeons.png" alt="Dungeons Console Gameplay">
+        </div>
+    </div>
+
+</div>
+
+<section id="skills" class="skills-section">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <div class="skills-container">
+        <div class="skills-column fade-in">
+            <h2 class="mini-title">Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Java, JavaScript (ES6), SQL, HTML5, CSS3</li>
+                <li><strong>Tools & Frameworks:</strong> Spring Boot, React, PostgreSQL, Git/GitHub, Chart.js, JUnit, Jira</li>
+                <li><strong>Technical Concepts:</strong> REST APIs, Role-Based Access Control (RBAC), State Management, Object-Oriented Design</li>
+            </ul>
+        </div>
+
+        <div class="skills-column fade-in">
+            <h2 class="mini-title">Professional & Management</h2>
+            <ul class="skills-list">
+                <li><strong>Methodologies:</strong> Agile Methodologies, Scrum Leadership & Sprint Tracking</li>
+                <li><strong>Leadership:</strong> Staff Training, Team Leadership, Conflict Resolution</li>
+                <li><strong>Project Scoping:</strong> Cross-Functional Teamwork, Technical Documentation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="contact-footer fade-in">
+    <h2 class="mini-title">Contact Me</h2>
+    <p>Currently seeking graduate and junior software engineering roles.</p>
+    <a href="mailto:ckendrick.dev@gmail.com" class="btn contact-btn">Get in Touch</a>
+</footer>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
